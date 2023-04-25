@@ -74,12 +74,6 @@ textarea {
   line-height: 150%;
 }
 
-.encrypter:hover {
-  background: #13e11d;
-  color: #fff;
-  font-weight: 700;
-}
-
 .decrypter {
   display: flex;
   flex-direction: row;
@@ -96,12 +90,6 @@ textarea {
   font-weight: 500;
   font-size: 1.3rem;
   line-height: 150%;
-}
-
-.decrypter:hover {
-  background: #13e11d;
-  color: #fff;
-  font-weight: 700;
 }
 
 .message-decrypted {
@@ -132,4 +120,12 @@ textarea {
   font-weight: 500;
   font-size: 1.3rem;
   line-height: 150%;
+}
+
+.encrypter:hover,
+.decrypter:hover,
+.button-copy:hover {
+  background: #13e11d;
+  color: #fff;
+  font-weight: 700;
 }

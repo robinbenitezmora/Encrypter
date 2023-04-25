@@ -16,9 +16,9 @@
   </header>
 
   <form action="">
-    <label for="message">
+    <div for="message-decrypted">
       <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter the text here"></textarea>
-    </label>
+    </div>
 
     <div class="warning">
       <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
@@ -30,7 +30,10 @@
       <input type="submit" class="decrypter" value="Decryptor">  
     </div>
 
-    <textarea name="translation" id="translation" cols="30" rows="10" placeholder="Message descrypted"></textarea>
+    <div class="message-decrypted">
+      <textarea name="translation" id="translation" cols="30" rows="10" placeholder="Message descrypted"></textarea>
+      <input type="submit" class="button-copy" value="Copy">
+    </div>
   </form>
 
 </body>

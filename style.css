@@ -19,10 +19,11 @@ img {
 textarea {
     width: 99%;
     height: auto;
-    border: 1px solid #ccc;
+    border: none;
     border-radius: 12px;
     text-align: justify;
     margin-bottom: 1rem;
+    padding: 1rem 0;
 }
 
 .warning {
@@ -101,4 +102,34 @@ textarea {
   background: #13e11d;
   color: #fff;
   font-weight: 700;
+}
+
+.message-decrypted {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 99%;
+    height: auto;
+    border-radius: 12px;
+    background-color: #fff;
+    padding-bottom: 1rem;
+}
+
+.button-copy {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 70%;
+  height: 4rem;
+  background: #fff;
+  border-radius: 1.5rem;
+  border: 1px solid #0A3871;
+  color: #0A3871;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 150%;
 }

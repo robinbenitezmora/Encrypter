@@ -1,7 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
-![Ruby](https://img.shields.io/badge/-Ruby-red)
 
-# OOP School Library
+# Encrypter
 
 > In this project, we are going to build a school library app. We will be creating classes for students and teachers. Also, we will be creating a class for a book and a class for rentals. We will be creating a relationship between all the classes.
 

@@ -37,7 +37,7 @@ textarea {
 }
 
 .warning-text {
-  width: 20rem;
+  width: 100%;
   height: 18px;
   font-family: 'Inter';
   font-style: normal;
@@ -45,7 +45,7 @@ textarea {
   font-size: 12px;
   line-height: 150%;
   color: #495057;
-  margin-left: 0.5rem;
+  margin-left: 0.2rem;
 }
 
 .buttons {
@@ -107,22 +107,37 @@ textarea {
   padding-bottom: 1rem;
 }
 
-.button-copy {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  width: 70%;
-  height: 4rem;
-  background: #fff;
-  border-radius: 1.5rem;
-  border: 1px solid #0A3871;
-  color: #0A3871;
+.text-output {
+  width: 100%;
+  height: 20rem;
+  border: none;
+  border-radius: 12px;
+  text-align: justify;
+  margin-bottom: 1rem;
+  padding: 1rem 0;
   font-family: 'Inter';
+  font-size: 1rem;
   font-style: normal;
-  font-weight: 500;
-  font-size: 1.3rem;
-  line-height: 150%;
+}
+
+.lateral-square {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 99%;
+  height: auto;
+  border-radius: 12px;
+  background-color: #fff;
+  padding-bottom: 1rem;
+}
+
+.decrypted-image {
+  display: none;
+}
+
+.button-copy {
+  display: none;
 }
 
 .encrypter:hover,
@@ -139,18 +154,16 @@ textarea {
   }
 
   header {
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
   }
 
   img {
     width: 8%;
-    height: auto;
+    padding-bottom: 3rem;
   }
 
   textarea {
     width: 100%;
-    height: auto;
-    font-size: 1.2rem;
   }
 
   .warning {
@@ -158,109 +171,70 @@ textarea {
   }
 
   .warning-text {
-    width: 100%;
-    font-size: 1.2rem;
+    font-size: 18px;
   }
 
   .buttons {
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    gap: 1rem;
-    margin: 2rem 0;
   }
 
   .encrypter {
-    width: 48%;
-    height: 4rem;
-    font-size: 1.2rem;
+    width: 49%;
   }
 
   .decrypter {
-    width: 48%;
-    height: 4rem;
-    font-size: 1.2rem;
-  }
-
-  .message-decrypted {
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-    background-color: #fff;
-    padding-bottom: 1rem;
-  }
-
-  .button-copy {
-    width: 48%;
-    height: 4rem;
-    font-size: 1.2rem;
+    width: 49%;
   }
 }
 
 @media screen and (min-width: 768px) {
   body {
-    padding: 3rem;
+    padding: 2.5rem;
   }
 
   header {
-    margin-bottom: 8rem;
+    margin-bottom: 2.5rem;
   }
 
   img {
     width: 10%;
-    height: auto;
-  }
-
-  textarea {
-    width: 100%;
-    height: auto;
-    font-size: 1.5rem;
-  }
-
-  .warning {
-    width: 100%;
+    padding-bottom: 7rem;
   }
 
   .warning-text {
-    width: 100%;
     font-size: 1.5rem;
   }
+}
 
-  .buttons {
+@media screen and (min-width: 1024px) {
+  body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    padding: 3rem;
+  }
+
+  .information {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
     height: auto;
-    gap: 1rem;
-    margin: 2rem 0;
+    margin-bottom: 2rem;
   }
 
-  .encrypter {
-    width: 48%;
-    height: 4rem;
-    font-size: 1.5rem;
-  }
-
-  .decrypter {
-    width: 48%;
-    height: 4rem;
-    font-size: 1.5rem;
-  }
-
-  .message-decrypted {
-    width: 100%;
+  .lateral-square {
+    width: 35%;
     height: auto;
-    border-radius: 12px;
-    background-color: #fff;
-    padding-bottom: 1rem;
+    margin-bottom: 0;
   }
 
-  .button-copy {
-    width: 48%;
-    height: 4rem;
-    font-size: 1.5rem;
+  .warning-text {
+    font-size: 2rem;
+  }
+
+  .decrypted-image {
+    display: flex;
   }
 }

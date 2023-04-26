@@ -13,30 +13,35 @@
 </head>
 
 <body>
-  <header>
-    <img src="assets/logo_alura.svg" class="logo" alt="alura's logo">
-  </header>
+  <section class="information">
+    <header>
+      <img src="assets/logo_alura.svg" class="logo" alt="alura's logo">
+    </header>
 
-  <form action="">
-    <div for="message-decrypted">
-      <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter the text here"></textarea>
-    </div>
+    <form action="">
+      <div for="message-decrypted">
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter the text here"></textarea>
+      </div>
 
-    <div class="warning">
-      <i class="fa fa-exclamation-circle" class="icon" aria-hidden="true"></i>
-      <p class="warning-text">Lower case letters only, no special characters</p>
-    </div>
+      <div class="warning">
+        <i class="fa fa-exclamation-circle" class="icon" aria-hidden="true"></i>
+        <p class="warning-text">Lower case letters only, no special characters</p>
+      </div>
 
-    <div class="buttons">
-      <input type="submit" class="encrypter" value="Encrypt">
-      <input type="submit" class="decrypter" value="Decryptor">
-    </div>
+      <div class="buttons">
+        <input type="submit" class="encrypter" value="Encrypt">
+        <input type="submit" class="decrypter" value="Decryptor">
+      </div>
+    </form>
+  </section>
 
+  <section class="lateral-square">
     <div class="message-decrypted">
-      <textarea name="translation" id="translation" cols="30" rows="10" placeholder="Message descrypted"></textarea>
+      <div class="text-output"></div>
+      <img src="assets/knee_boy.svg" class="decrypted-image" alt="knee-boy">
       <input type="submit" class="button-copy" value="Copy">
     </div>
-  </form>
+  </section>
 
 </body>
 

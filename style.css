@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -23,7 +29,7 @@ textarea {
   border-radius: 12px;
   text-align: justify;
   margin-bottom: 1rem;
-  padding: 1rem 0;
+  padding: 1rem;
   font-family: 'Inter';
   font-size: 1rem;
   font-style: normal;
@@ -32,7 +38,6 @@ textarea {
 .warning {
   display: flex;
   flex-direction: row;
-  width: 70%;
   color: #495057;
 }
 
@@ -95,7 +100,7 @@ textarea {
   line-height: 150%;
 }
 
-.message-decrypted {
+/* .message-decrypted {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -105,7 +110,7 @@ textarea {
   border-radius: 12px;
   background-color: #fff;
   padding-bottom: 1rem;
-}
+} */
 
 .text-output {
   width: 100%;
@@ -159,7 +164,6 @@ textarea {
 
   img {
     width: 8%;
-    padding-bottom: 3rem;
   }
 
   textarea {
@@ -198,7 +202,6 @@ textarea {
 
   img {
     width: 10%;
-    padding-bottom: 7rem;
   }
 
   .warning-text {
@@ -210,31 +213,69 @@ textarea {
   body {
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding: 3rem;
   }
 
   .information {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     width: 65%;
-    height: auto;
-    margin-bottom: 2rem;
+    height: 100vh;
+    padding: 1.5rem 4rem 1.5rem 0;
   }
 
   .lateral-square {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 35%;
-    height: auto;
-    margin-bottom: 0;
+    height: 100vh;
+    padding: 2rem 0;
+  }
+
+  .text-output {
+    display: none;
+  }
+
+  img {
+    width: 7%;
+  }
+
+  textarea {
+    font-size: 1.5rem;
+  }
+
+  .warning {
+    display: flex;
+    flex-direction: row;
+    color: #495057;
+    margin: 4rem 0 0;
   }
 
   .warning-text {
-    font-size: 2rem;
+    height: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .buttons {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2rem 0 0;
+  }
+
+  .encrypter,
+  .decrypter {
+    width: 33%;
   }
 
   .decrypted-image {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .button-copy {
+    display: none;
   }
 }

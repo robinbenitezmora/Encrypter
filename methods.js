@@ -1,3 +1,15 @@
+function copyAndEncryptToDiv () {
+    const text = document.getElementById("message").value;
+    const encryptedText = encryption(text);
+    document.getElementById("text-output").textContent = encryptedText;
+}
+
+function copyAndDecryptToTextArea () {
+    const text = document.getElementById("text-output").textContent;
+    const decryptedText = decryption(text);
+    document.getElementById("message").value = decryptedText;
+}
+
 function encryption(message) {
     for (let i = 0; i < message.length; i++) {
         let word = message.split(' ').join('').toLowerCase();
@@ -56,14 +68,12 @@ function decryption(message) {
     return word;
 }
 
-export { encryption, decryption };
+// export { copyAndEncryptToDiv, copyAndDecryptToTextArea };
 
-const result = encryption("Hello World");
+// const result = encryption("Hello World");
 
-console.log(result); // "Henterllo Woberrld"
+// console.log(result); // "Henterllo Woberrld"
 
-const result2 = decryption("Henterllo Woberrld");
+// const result2 = decryption("Henterllo Woberrld");
 
-console.log(result2); // "Hello World"
-
-
+// console.log(result2); // "Hello World"

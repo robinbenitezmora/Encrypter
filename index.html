@@ -29,21 +29,21 @@
       </div>
 
       <div class="buttons">
-        <input type="submit" class="encrypter" value="Encrypt" onclick="encryption">
-        <input type="submit" class="decrypter" value="Decryptor" onclick="decryption">
+        <button type="submit" class="encrypter" id="encrypt" onclick="encryption()">Encrypt</button>
+        <button type="submit" class="decrypter" id="decrypt" onclick="decryption()">Decryptor</button>
       </div>
     </form>
   </section>
 
   <section class="lateral-square">
     <div class="message-decrypted">
-      <div class="text-output"></div>
+      <div id="text-output" class="text-output"></div>
       <img src="assets/knee_boy.svg" class="decrypted-image" alt="knee-boy">
       <input type="submit" class="button-copy" value="Copy">
     </div>
   </section>
 
+  <script src="methods.js"></script>
 </body>
-<script src="methods.js"></script>
 
 </html>

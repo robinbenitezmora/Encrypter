@@ -68,7 +68,7 @@ textarea {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   width: 100%;
   height: 4rem;
   background: #0A3871;
@@ -86,7 +86,7 @@ textarea {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   width: 100%;
   height: 4rem;
   background: #fff;
@@ -112,6 +112,18 @@ textarea {
   padding-bottom: 1rem;
 } */
 
+.lateral-square {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 99%;
+  height: auto;
+  border-radius: 12px;
+  background-color: #fff;
+  padding-bottom: 1rem;
+}
+
 .text-output {
   width: 100%;
   height: 20rem;
@@ -123,18 +135,6 @@ textarea {
   font-family: 'Inter';
   font-size: 1rem;
   font-style: normal;
-}
-
-.lateral-square {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 99%;
-  height: auto;
-  border-radius: 12px;
-  background-color: #fff;
-  padding-bottom: 1rem;
 }
 
 .decrypted-image {

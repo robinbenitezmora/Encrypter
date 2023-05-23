@@ -13,12 +13,28 @@
 </head>
 
 <body>
-  <section class="information">
-    <header>
-      <img src="assets/logo_alura.svg" class="logo" alt="alura's logo">
-    </header>
+  <header>
+    <img src="assets/logo_alura.svg" class="logo" alt="alura's logo">
+  </header>
 
-    <form action="">
+  <section>
+    <textarea name="" id="" class="text-area" cols="30" rows="10" placeholder="Please write a text"></textarea>
+    <div>
+      <h6 class="information">Write only downcase letters without accent</h6>
+    </div>
+    <div class="buttons">
+      <button class="btn-encrypter">Encrypter</button>
+      <button class="btn-decrypter">Decrypter</button>
+    </div>
+  </section>
+  <section>
+    <textarea name="" id="" class="message" cols="30" rows="10"></textarea>
+    <div>
+      <button class="copy">Copy</button>
+    </div>
+  </section>
+
+  <!-- <form action="">
       <div for="message-decrypted">
         <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter the text here"></textarea>
       </div>
@@ -32,8 +48,8 @@
         <button type="submit" class="encrypter" id="encrypt" onclick="encryption()">Encrypt</button>
         <button type="submit" class="decrypter" id="decrypt" onclick="decryption()">Decryptor</button>
       </div>
-    </form>
-  </section>
+    </form> -->
+  <!-- </section>
 
   <section class="lateral-square">
     <div class="message-decrypted">
@@ -41,7 +57,7 @@
       <img src="assets/knee_boy.svg" class="decrypted-image" alt="knee-boy">
       <input type="submit" class="button-copy" value="Copy">
     </div>
-  </section>
+  </section> -->
 
   <script src="methods.js"></script>
 </body>

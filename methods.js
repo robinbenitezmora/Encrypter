@@ -20,6 +20,25 @@ function encrypter(stringEncrypted){
   return stringEncrypted;
 }
 
+function btnDecrypter() {
+  const decryptedText = decrypter(textArea.value);
+  message.value = decryptedText;
+  textArea.value = "";
+  message.style.backgroundImage = "none";
+}
+
+function decrypter(stringDecrypted){
+  let codeMatrix = [['e', 'enter'], ['i', 'imes'], ['a', 'ai'], ['o', 'ober'], ['u', 'ufat']]
+  stringEncrypted = stringDecrypted.toLowerCase();
+
+  for (let i = 0; i < codeMatrix.length; i++) {
+    if (stringDecrypted.includes(codeMatrix[i][1])) {
+      stringDecrypted = stringEncrypted.replaceAll(codeMatrix[i][1], codeMatrix[i][0]);
+    }
+  }
+  return stringDecrypted;
+}
+
 
 // function copyAndEncryptToDiv () {
 //     const text = document.getElementById("message").value;

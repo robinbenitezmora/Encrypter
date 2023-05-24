@@ -1,6 +1,13 @@
 const textArea = document.querySelector('.text-area');
 const message = document.querySelector('.message');
 
+function btnEncrypter() {
+  const encryptedText = encrypter(textArea.value);
+  message.value = encryptedText;
+  textArea.value = "";
+  message.style.backgroundImage = "none";
+}
+
 function encrypter(stringEncrypted){
   let codeMatrix = [['e', 'enter'], ['i', 'imes'], ['a', 'ai'], ['o', 'ober'], ['u', 'ufat']]
   stringEncrypted = stringEncrypted.toLowerCase();

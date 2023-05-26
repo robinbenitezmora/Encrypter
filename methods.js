@@ -39,6 +39,16 @@ function decrypter(stringDecrypted){
   return stringDecrypted;
 }
 
+function btnCopy() {
+  const copyText = copy(message.value);
+  textArea.value = copyText;
+  message.value = "";
+}
+
+function copy(messageText){
+  let messageCopied = messageText;
+  return messageCopied;
+}
 
 // function copyAndEncryptToDiv () {
 //     const text = document.getElementById("message").value;

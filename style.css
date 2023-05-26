@@ -52,12 +52,15 @@ main {
 }
 
 .message {
+  width: 85vw;
+  height: 20rem;
   background: #fff;
   background-image: url('assets/knee_boy.svg');
   background-position: center;
   background-repeat: no-repeat;
   border: none;
   border-radius: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .message:focus {
@@ -75,7 +78,8 @@ main {
   margin: 2rem 0;
 }
 
-.btn-encrypter {
+.btn-encrypter,
+.copy {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -110,22 +114,12 @@ main {
   line-height: 150%;
 }
 
-.copy {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 4rem;
-  background: #0A3871;
-  border-radius: 1.5rem;
-  border: none;
+.btn-decrypter:hover,
+.btn-encrypter:hover,
+.copy:hover {
+  background: #13e11d;
   color: #fff;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.3rem;
-  line-height: 150%;
+  font-weight: 700;
 }
 
 /* .warning {
@@ -237,14 +231,6 @@ main {
 .button-copy {
   display: none;
 }
-
-.encrypter:hover,
-.decrypter:hover,
-.button-copy:hover {
-  background: #13e11d;
-  color: #fff;
-  font-weight: 700;
-} */
 
 /* @media screen and (min-width: 480px) {
   body {

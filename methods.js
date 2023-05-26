@@ -8,16 +8,31 @@ function btnEncrypter() {
   message.style.backgroundImage = "none";
 }
 
-function encrypter(stringEncrypted){
-  let codeMatrix = [['e', 'enter'], ['i', 'imes'], ['a', 'ai'], ['o', 'ober'], ['u', 'ufat']]
-  stringEncrypted = stringEncrypted.toLowerCase();
+function checkSpecialCharacters(text) {
+  let regex = /[^a-zA-Z0-9\s]/;
 
-  for (let i = 0; i < codeMatrix.length; i++) {
-    if (stringEncrypted.includes(codeMatrix[i][0])) {
-      stringEncrypted = stringEncrypted.replaceAll(codeMatrix[i][0], codeMatrix[i][1]);
-    }
+  if (regex.test(text)) {
+    return false;
+  } else {
+    return true;
   }
-  return stringEncrypted;
+}
+
+function encrypter(stringEncrypted){
+  let messageChecked = checkSpecialCharacters(stringEncrypted);
+  if (messageChecked) {
+    let codeMatrix = [['e', 'enter'], ['i', 'imes'], ['a', 'ai'], ['o', 'ober'], ['u', 'ufat']]
+    stringEncrypted = stringEncrypted.toLowerCase();
+
+    for (let i = 0; i < codeMatrix.length; i++) {
+      if (stringEncrypted.includes(codeMatrix[i][0])) {
+        stringEncrypted = stringEncrypted.replaceAll(codeMatrix[i][0], codeMatrix[i][1]);
+      }
+    }
+    return stringEncrypted;
+  } else {
+    alert('Accents and special characters are forbidden!')
+  }
 }
 
 function btnDecrypter() {
@@ -39,6 +54,16 @@ function decrypter(stringDecrypted){
   return stringDecrypted;
 }
 
+function btnCopy() {
+  const copyText = copy(message.value);
+  textArea.value = copyText;
+  message.value = "";
+}
+
+function copy(messageText){
+  let messageCopied = messageText;
+  return messageCopied;
+}
 
 // function copyAndEncryptToDiv () {
 //     const text = document.getElementById("message").value;

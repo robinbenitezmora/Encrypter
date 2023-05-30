@@ -207,217 +207,33 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-  body {
-    padding: 2.5rem;
+  header {
+    width: 65%;
   }
 
-  header {
-    margin-bottom: 2.5rem;
+  main {
+    flex-direction: row;
+    padding-left: 3rem;
   }
 
   .logo {
-    width: 10%;
+    width: 12%;
+    padding-left: 3rem;
   }
 
   .text-area {
-    font-size: 1.5rem;
-  }
-
-  .message {
     width: 100%;
+    font-size: 2rem;
+    margin-bottom: 4rem;
   }
 
-  .buttons {
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 2rem 0 0;
-  }
-
-  .btn-encrypter,
-  .btn-decrypter {
-    width: 33%;
-  }
-}
-
-/* .warning {
-  display: flex;
-  flex-direction: row;
-  color: #495057;
-}
-
-.warning-text {
-  width: 100%;
-  height: 18px;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 150%;
-  color: #495057;
-  margin-left: 0.2rem;
-}
-
-.buttons {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  gap: 1rem;
-  margin: 2rem 0;
-}
-
-.encrypter {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 4rem;
-  background: #0A3871;
-  border-radius: 1.5rem;
-  border: none;
-  color: #fff;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.3rem;
-  line-height: 150%;
-}
-
-.decrypter {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 4rem;
-  background: #fff;
-  border-radius: 1.5rem;
-  border: 1px solid #0A3871;
-  color: #0A3871;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.3rem;
-  line-height: 150%;
-} */
-
-/* .message-decrypted {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 99%;
-  height: auto;
-  border-radius: 12px;
-  background-color: #fff;
-  padding-bottom: 1rem;
-} */
-
-/* .lateral-square {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 99%;
-  height: auto;
-  border-radius: 12px;
-  background-color: #fff;
-  padding-bottom: 1rem;
-}
-
-.text-output {
-  width: 100%;
-  height: 20rem;
-  border: none;
-  border-radius: 12px;
-  text-align: justify;
-  margin-bottom: 1rem;
-  padding: 1rem 0;
-  font-family: 'Inter';
-  font-size: 1rem;
-  font-style: normal;
-}
-
-.decrypted-image {
-  display: none;
-}
-
-.button-copy {
-  display: none;
-}
-
-/* @media screen and (min-width: 480px) {
-  body {
-    padding: 2rem;
-  }
-
-  header {
-    margin-bottom: 2rem;
-  }
-
-  img {
-    width: 8%;
-  }
-
-  textarea {
-    width: 100%;
-  }
-
-  .warning {
-    width: 100%;
-  }
-
-  .warning-text {
-    font-size: 18px;
-  }
-
-  .buttons {
-    flex-direction: row;
-  }
-
-  .encrypter {
-    width: 49%;
-  }
-
-  .decrypter {
-    width: 49%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  body {
-    padding: 2.5rem;
-  }
-
-  header {
-    margin-bottom: 2.5rem;
-  }
-
-  img {
-    width: 10%;
-  }
-
-  .warning-text {
-    font-size: 1.5rem;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  body {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .information {
+  .first-part {
     width: 65%;
     height: 100vh;
     padding: 1.5rem 4rem 1.5rem 0;
   }
 
-  .lateral-square {
+  .second-part {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -425,53 +241,26 @@ footer {
     width: 35%;
     height: 100vh;
     padding: 2rem 0;
+    z-index: 1000;
   }
 
-  .text-output {
-    display: none;
+  .message {
+    width: 25vw;
+    height: 100vh;
+    font-size: 2rem;
   }
 
-  img {
-    width: 7%;
+  .message:focus {
+    outline: none;
   }
 
-  textarea {
-    font-size: 1.5rem;
-  }
-
-  .warning {
+  .copy {
     display: flex;
     flex-direction: row;
-    color: #495057;
-    margin: 4rem 0 0;
-  }
-
-  .warning-text {
-    height: 2rem;
-    font-size: 1.5rem;
+    width: 3rem;
   }
 
   .buttons {
     flex-direction: row;
-    justify-content: space-evenly;
-    margin: 2rem 0 0;
   }
-
-  .encrypter,
-  .decrypter {
-    width: 33%;
-  }
-
-  .decrypted-image {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-  }
-
-  .button-copy {
-    display: none;
-  }
-} */
+}

@@ -5,7 +5,7 @@
 ## Getting Started
 
 To get a local copy up and running follow these simple steps.
-git clone https://github.com/robinbenitezmora in your terminal
+git clone https://github.com/robinbenitezmora/Encrypter in your terminal
 
 ### Prerequisites
 - Git

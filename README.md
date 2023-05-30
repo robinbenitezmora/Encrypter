@@ -33,6 +33,6 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 Give a ⭐️ if you like this project!
 ## Acknowledgments 
-Thanks to all Microverse partners for their advice.
+Thanks to Alura for helping.
 ## License
 This project is [MIT](./MIT.md) licensed.

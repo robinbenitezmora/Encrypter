@@ -123,6 +123,46 @@ main {
   font-weight: 700;
 }
 
+footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.personal-info {
+  text-align: left;
+}
+
+.social-networks {
+  text-align: right;
+}
+
+.social-networks ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-networks ul li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.social-networks ul li a {
+  color: #333;
+  font-size: 20px;
+  text-decoration: none;
+}
+
 /* .warning {
   display: flex;
   flex-direction: row;

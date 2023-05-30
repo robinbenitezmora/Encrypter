@@ -61,6 +61,7 @@ main {
   border: none;
   border-radius: 1rem;
   margin-bottom: 1.5rem;
+  padding: 1.5rem;
 }
 
 .message:focus {
@@ -120,6 +121,122 @@ main {
   background: #13e11d;
   color: #fff;
   font-weight: 700;
+}
+
+footer {
+  background-color: #f8f8f8;
+  border-radius: 1rem;
+  padding: 20px;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #0A3871;
+  font-weight: 700;
+}
+
+.personal-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 1rem 0;
+}
+
+.social-networks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.social-networks ul li {
+  display: inline-block;
+  margin-left: 0.7rem;
+}
+
+.social-networks ul li a {
+  color: #1410d3;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 480px) {
+  body {
+    padding: 2rem;
+  }
+
+  header {
+    margin-bottom: 2rem;
+  }
+
+  .logo {
+    width: 8%;
+  }
+
+  .message {
+    width: 100%;
+  }
+
+  .text-area {
+    width: 100%;
+  }
+
+  .buttons {
+    flex-direction: row;
+  }
+
+  .btn-encrypter {
+    width: 49%;
+  }
+
+  .btn-decrypter {
+    width: 49%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding: 2.5rem;
+  }
+
+  header {
+    margin-bottom: 2.5rem;
+  }
+
+  .logo {
+    width: 10%;
+  }
+
+  .text-area {
+    font-size: 1.5rem;
+  }
+
+  .message {
+    width: 100%;
+  }
+
+  .buttons {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2rem 0 0;
+  }
+
+  .btn-encrypter,
+  .btn-decrypter {
+    width: 33%;
+  }
 }
 
 /* .warning {

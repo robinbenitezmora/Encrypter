@@ -44,11 +44,11 @@ function btnDecrypter() {
 
 function decrypter(stringDecrypted){
   let codeMatrix = [['e', 'enter'], ['i', 'imes'], ['a', 'ai'], ['o', 'ober'], ['u', 'ufat']]
-  stringEncrypted = stringDecrypted.toLowerCase();
+  stringDecrypted = stringDecrypted.toLowerCase();
 
   for (let i = 0; i < codeMatrix.length; i++) {
     if (stringDecrypted.includes(codeMatrix[i][1])) {
-      stringDecrypted = stringEncrypted.replaceAll(codeMatrix[i][1], codeMatrix[i][0]);
+      stringDecrypted = stringDecrypted.replaceAll(codeMatrix[i][1], codeMatrix[i][0]);
     }
   }
   return stringDecrypted;

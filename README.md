@@ -8,7 +8,6 @@ To get a local copy up and running follow these simple steps.
 git clone https://github.com/robinbenitezmora in your terminal
 
 ### Prerequisites
-- Ruby
 - Git
 - VSCode
 - GitHub
@@ -24,9 +23,6 @@ git clone https://github.com/robinbenitezmora in your terminal
 - GitHub: [@robinbenitezmora](https://github.com/robinbenitezmora)
 - Twitter: [@Mecanico_Robin](https://twitter.com/mecanico_robin)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/robin-benitez-mora/)
-
-- GitHub: [@asnganje](https://github.com/asnganje)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/abdulrahman-nganje-a6436935//)
 
 
 ## Contributing

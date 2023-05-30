@@ -172,6 +172,73 @@ footer {
   text-decoration: none;
 }
 
+@media screen and (min-width: 480px) {
+  body {
+    padding: 2rem;
+  }
+
+  header {
+    margin-bottom: 2rem;
+  }
+
+  .logo {
+    width: 8%;
+  }
+
+  .message {
+    width: 100%;
+  }
+
+  .text-area {
+    width: 100%;
+  }
+
+  .buttons {
+    flex-direction: row;
+  }
+
+  .btn-encrypter {
+    width: 49%;
+  }
+
+  .btn-decrypter {
+    width: 49%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding: 2.5rem;
+  }
+
+  header {
+    margin-bottom: 2.5rem;
+  }
+
+  .logo {
+    width: 10%;
+  }
+
+  .text-area {
+    font-size: 1.5rem;
+  }
+
+  .message {
+    width: 100%;
+  }
+
+  .buttons {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2rem 0 0;
+  }
+
+  .btn-encrypter,
+  .btn-decrypter {
+    width: 33%;
+  }
+}
+
 /* .warning {
   display: flex;
   flex-direction: row;

@@ -71,7 +71,7 @@ main {
 .buttons {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
   height: auto;
@@ -251,7 +251,20 @@ footer {
   }
 
   .buttons {
-    flex-direction: row;
     margin: 1rem 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .logo {
+    width: 15%;
+  }
+
+  .btn-encrypter {
+    width: 45%;
+  }
+
+  .btn-decrypter {
+    width: 45%;
   }
 }
